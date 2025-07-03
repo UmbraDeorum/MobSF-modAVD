@@ -99,9 +99,9 @@ docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZ
 
 | Patchfile | Destination |
 |:-:|:-:|
-| [environment.py](https://raw.githubusercontent.com/UmbraDeorum/MobSF-modAVD/refs/heads/main/mobsf-android-patchfiles/environment.py?token=GHSAT0AAAAAAC6L3ENC6S5FVUCXKCO52RMS2DF2DNQ) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/environment.py |
-| [frida_core.py](https://raw.githubusercontent.com/UmbraDeorum/MobSF-modAVD/refs/heads/main/mobsf-android-patchfiles/frida_core.py?token=GHSAT0AAAAAAC6L3ENC4AKIE5THG3FS4ZQO2DF2DZA) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/frida_core.py |
-| [utils.py](https://raw.githubusercontent.com/UmbraDeorum/MobSF-modAVD/refs/heads/main/mobsf-android-patchfiles/utils.py?token=GHSAT0AAAAAAC6L3ENDEYDKR3PQLPYI37PC2DF2ROA) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/MobSF/utils.py |
+| [environment.py](https://github.com/UmbraDeorum/MobSF-modAVD/blob/main/mobsf-android-patchfiles/environment.py) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/environment.py |
+| [frida_core.py](https://github.com/UmbraDeorum/MobSF-modAVD/blob/main/mobsf-android-patchfiles/frida_core.py) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/frida_core.py |
+| [utils.py](https://github.com/UmbraDeorum/MobSF-modAVD/blob/main/mobsf-android-patchfiles/utils.py) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/MobSF/utils.py |
 
 ---
 
