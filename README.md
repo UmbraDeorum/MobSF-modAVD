@@ -136,7 +136,7 @@ Since we are working on Docker containers, to remove the modified version:
 docker image list 
 ```
 
-2. Remove the loaded docker image:
+2. Remove the modified docker image:
 ```bash
 docker image rm umbradeorum/mobile-security-framework-mobsf-modavd:latest
 ```
