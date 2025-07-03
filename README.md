@@ -10,7 +10,8 @@ A modified version of Docker MobSF v4.4.0, created with the goal to make it simp
 
 ## Step-by-step
 
-1. Create an Android AVD, of API>=30 (Services: Android Open Source [AOS])
+1. Create an Android AVD<br/>
+API<=30 (Services: Android Open Source [AOS])
 
 2. Start PowerShell as Administrator, and execute the following commands:
 ```powershell
