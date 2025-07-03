@@ -54,4 +54,30 @@ Modifications tracker:
   ```
 
 * All `if not self.identifier` checks have been removed, along with their return values.
-  
+
+## frida_core.py
+
+Calls which were bound to raise exceptions due to the changes in **environment.py** were modified.
+all cases of:
+```python
+device = frida.get_device(
+                get_device(),
+                settings.FRIDA_TIMEOUT)
+```
+
+were replaced with:
+```python
+device = frida.get_usb_device()
+```
+
+## utils.py
+
+Added a line after:
+```python
+logger.info('Author: Ajin Abraham | opensecurity.in')    
+```
+to introduce some self-validation (^_^):
+```python
+logger.info('Author: Ajin Abraham | opensecurity.in')
+logger.info('Modded by: Umbr4Dε0rum | twelvesec.com')
+```
