@@ -5,7 +5,7 @@ A modified version of Docker MobSF v4.4.0, created with the goal to make it simp
 
 - Windows 11 Host
 (Running Android Studio Narwhal, Build #AI-251.25410.109.2511.13665796)
-- Kali WSL2 Virtual Machine, in networkingMode=mirrored
+- Kali WSL2 Virtual Machine, in `networkingMode=mirrored`
 (Running the Docker instance of MobSF)
 
 ## Step-by-step
