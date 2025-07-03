@@ -23,7 +23,7 @@
 - Kali WSL2 Virtual Machine, in `networkingMode=mirrored`
 (Running the Docker instance of MobSF)
 
-## Step-by-step
+<h2><img style="height:1em;" src="https://img.icons8.com/?size=100&id=5xG5z0KvjBzQ&format=png&color=000000"/> Step-by-step</h2>
 
 1. [Create an Android AVD](https://developer.android.com/studio/run/managing-avds) -- Do not boot the device yet!<br/>
 API<=30<br/>
@@ -58,7 +58,7 @@ If you installed an application after completing the aforementioned steps (`adb 
 
 ---
 
-## Installation of Docker image
+<h2><img style="height:1em;" src="https://img.icons8.com/?size=100&id=qGZRK3KTK57F&format=png&color=000000"/> Installation of Docker image</h2>
 
 ### Option 1: Modify the original MobSF Docker image
 
@@ -117,7 +117,7 @@ docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZ
 
 ---
 
-## Patchfile map
+<h2><img style="height:1em;" src="https://img.icons8.com/?size=100&id=6lNgeKfgOOkn&format=png&color=000000"/> Patchfile map</h2>
 
 | Patchfile | Destination |
 |:-:|:-:|
@@ -127,7 +127,7 @@ docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZ
 
 ---
 
-## Uninstallation / Reverting to the original
+<h2><img style="height:1em;" src="https://img.icons8.com/?size=100&id=scGW7mppMRsI&format=png&color=000000"/> Uninstallation / Reverting to the original</h2>
 
 Since we are working on Docker containers, to remove the modified version:
 
