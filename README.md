@@ -86,12 +86,19 @@ docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZ
 
 3. Load the `.tar` archive as a Docker image:
 ```bash
-docker load < MobSF-modAVD-vX.X.tar
+docker load --input MobSF-modAVD-vX.X.tar
 ```
 
 4. From now on, you can run it via:
 ```bash
 docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZER_IDENTIFIER=emulator-5554 --net host umbradeorum/mobile-security-framework-mobsf-modavd:latest
+```
+
+### Option 3: Pull latest image from ghcr.io
+
+```bash
+docker pull ghcr.io/umbradeorum/mobile-security-framework-mobsf-modavd:latest
+docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZER_IDENTIFIER=emulator-5554 --net host ghcr.io/umbradeorum/mobile-security-framework-mobsf-modavd:latest
 ```
 
 ---
