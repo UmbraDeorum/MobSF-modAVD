@@ -134,15 +134,7 @@ docker pull opensecurity/mobile-security-framework-mobsf:latest
 
 ---
 
-### DISCLAIMER
-
-Be your own you, but also be responsibe.<br/>
-This tool has been widely used to make the world a safer place.<br/>If you abuse it to illegal means, be ready to own up to it! <br/>
-This modification aims to make an Offensive Security Consultant's life a bit easier, and a student's entry point to learning a bit less thorny.<br/>
-That's all!
-
----
-
 <br/>
 
-> This project is licensed under the terms of the GNU GENERAL PUBLIC LICENSE (Version 3, 29 June 2007).
+> This project is licensed under the terms of the [GNU GENERAL PUBLIC LICENSE (Version 3, 29 June 2007)](https://github.com/UmbraDeorum/MobSF-modAVD/blob/main/LICENSE).<br/>
+> [Terms and Conditions](https://github.com/UmbraDeorum/MobSF-modAVD/blob/main/TERMS_AND_CONDITIONS.md) apply.
