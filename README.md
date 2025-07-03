@@ -105,6 +105,35 @@ docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZ
 
 ---
 
+## Uninstallation / Reverting to the original
+
+Since we are working on Docker containers, to remove the modified version:
+
+1. List existing docker images:
+```bash
+docker image list 
+```
+
+2. Remove the loaded docker image:
+```bash
+docker image rm umbradeorum/mobile-security-framework-mobsf-modavd:latest
+```
+
+
+Also, if you want to then revert to using the original (and soon to be newer) version of MobSF:
+
+
+1. Pull the latest MobSF docker image:
+```bash
+docker pull opensecurity/mobile-security-framework-mobsf:latest
+```
+
+2. Follow the original documentation:
+* [Running MobSF](https://mobsf.github.io/docs/#/running_mobsf_docker)
+* [MobSF - Android Studio Emulator Guide](https://mobsf.github.io/docs/#/dynamic_analyzer_docker?id=android-studio-emulator)
+
+---
+
 ### DISCLAIMER
 
 Be your own you, but also be responsibe.<br/>
