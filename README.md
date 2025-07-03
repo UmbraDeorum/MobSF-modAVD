@@ -1,14 +1,14 @@
 # MobSF-modAVD
 A modified version of MobSF v4.4.0, created with the goal to make it simpler to use with Android Studio AVDs in Dynamic Analysis Mode.
 
-My setup:
+## My setup
 
 - Windows 11 Host
 (Running Android Studio Narwhal, Build #AI-251.25410.109.2511.13665796)
 - Kali WSL2 Virtual Machine, in networkingMode=mirrored
 (Running the Docker instance of MobSF)
 
-Step-by-step:
+## Step-by-step
 
 1. Create an Android AVD, of API>=30 (Services: Android Open Source [AOS])
 
@@ -36,5 +36,13 @@ Some of the above flags will not find actual use in this modified version, but t
 In case it did not, try to select the `MobSFy Android Runtime` option, and then `MobSFy`. Don't mind the value -- it is ignored in this version.<br/>
 If you installed an application after completing the aforementioned steps (`adb install <apk-name-in-folder>`), reload the `Dynamic Analyzer` page.
 
+---
 
+## Patchfile map
 
+| Patchfile | Destination |
+|:-:|:-:|
+| environment.py | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/environment.py |
+| frida_core.py | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/frida_core.py |
+
+The patchfiles can be pushed in an original MobSF docker container: `docker cp <patchfile> <containter-id>:<destination>`.
