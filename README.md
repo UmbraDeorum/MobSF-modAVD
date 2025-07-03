@@ -1,5 +1,6 @@
 # MobSF-modAVD
-A modified version of the MobSF v4.4.0 docker image, created with the goal to make it simpler to use with Android Studio AVDs in Dynamic Analysis Mode.
+A modified version of the MobSF v4.4.0 docker image, created with the goal to make it simpler to use with Android Studio AVDs in Dynamic Analysis Mode.<br/>
+*Disclaimer: Do **NOT** expect it work in any other use case, other the one it was modified for.*
 
 ## My setup
 
