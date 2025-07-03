@@ -10,7 +10,7 @@ A modified version of Docker MobSF v4.4.0, created with the goal to make it simp
 
 ## Step-by-step
 
-1. [Create an Android AVD](https://developer.android.com/studio/run/managing-avds)<br/>
+1. [Create an Android AVD](https://developer.android.com/studio/run/managing-avds) -- Do not boot the device yet!<br/>
 API<=30<br/>
 Services: Android Open Source (AOS)
 
