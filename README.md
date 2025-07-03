@@ -25,7 +25,7 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 5. Start a MobSF Docker container:
 ```bash
-sudo docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZER_IDENTIFIER=emulator-5554 --net host umbradeorum/mobile-security-framework-mobsf-modavd:latest
+docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZER_IDENTIFIER=emulator-5554 --net host umbradeorum/mobile-security-framework-mobsf-modavd:latest
 ```
 Some of the above flags will not find actual use in this modified version, but this may somewhat ensure that the same command will also work with any future updates.
 
@@ -38,7 +38,55 @@ If you installed an application after completing the aforementioned steps (`adb 
 
 ---
 
+## Installation of Docker image
 
+### Option 1: Modify the original MobSF Docker image
+
+1. Pull the image's latest version (this modification was tested on MobSF v4.4.0)
+```bash
+docker pull opensecurity/mobile-security-framework-mobsf:latest 
+```
+
+2. Run it and take note of its **Container ID**
+```bash
+docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZER_IDENTIFIER=emulator-5554 --net host opensecurity/mobile-security-framework-mobsf:latest
+docker ps
+```
+
+3. Push the modfiles into their respective locations, as per the **Patchfile map**.
+```bash
+docker cp <patchfile> <containter-id>:<destination>
+```
+
+4. Commit locally for future use:
+```bash
+docker commit -a umbradeorm <container_NAME> umbradeorum/mobile-security-framework-mobsf-modavd:latest
+```
+
+5. From now on, you can run it via:
+```bash
+docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZER_IDENTIFIER=emulator-5554 --net host umbradeorum/mobile-security-framework-mobsf-modavd:latest
+```
+
+### Option 2: Load the ready Docker image archive
+
+1. From the **Releases** tab, download the latest `MobSF-modAVD-vX.X.tar.7z` file.
+
+2. Verify and extract to `.tar`:
+```bash
+7z l MobSF-modAVD-vX.X.tar.7z
+7z x MobSF-modAVD-vX.X.tar.7z -o <output_folder>
+```
+
+3. Load the `.tar` archive as a Docker image:
+```bash
+docker load < MobSF-modAVD-vX.X.tar
+```
+
+4. From now on, you can run it via:
+```bash
+docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZER_IDENTIFIER=emulator-5554 --net host umbradeorum/mobile-security-framework-mobsf-modavd:latest
+```
 
 ---
 
@@ -48,5 +96,19 @@ If you installed an application after completing the aforementioned steps (`adb 
 |:-:|:-:|
 | [environment.py](https://raw.githubusercontent.com/UmbraDeorum/MobSF-modAVD/refs/heads/main/mobsf-android-patchfiles/environment.py?token=GHSAT0AAAAAAC6L3ENC6S5FVUCXKCO52RMS2DF2DNQ) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/environment.py |
 | [frida_core.py](https://raw.githubusercontent.com/UmbraDeorum/MobSF-modAVD/refs/heads/main/mobsf-android-patchfiles/frida_core.py?token=GHSAT0AAAAAAC6L3ENC4AKIE5THG3FS4ZQO2DF2DZA) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/frida_core.py |
+| [utils.py](https://raw.githubusercontent.com/UmbraDeorum/MobSF-modAVD/refs/heads/main/mobsf-android-patchfiles/utils.py?token=GHSAT0AAAAAAC6L3ENDEYDKR3PQLPYI37PC2DF2ROA) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/MobSF/utils.py |
 
-The patchfiles can be pushed in an original MobSF docker container: `docker cp <patchfile> <containter-id>:<destination>`.
+---
+
+### DISCLAIMER
+
+Be your own you.<br/>
+This tool has been widely used to make the world a safer place. If you abuse it to illegal means, be ready to own up to it! <br/>
+This modification aims to make an Offensive Security Consultant's life a bit easier, and a student's entry point to learning a bit less thorny.<br/>
+That's all!
+
+---
+
+<br/>
+
+> This project is licensed under the terms of the GNU GENERAL PUBLIC LICENSE (Version 3, 29 June 2007).
