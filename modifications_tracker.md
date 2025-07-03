@@ -8,6 +8,8 @@
 - commited the modified version locally, and saved it in MobSF-modAVD-vX.X.tar format, to be `docker load`ed when in a rush.
 - `7z`ipped the MobSF-modAVD-vX.X.tar archive, for portability.
 
+- The modified image contains a `/home/mobsf/Mobile-Security-Framework-MobSF/MODDER_ADDED_DOCS` folder, with this pre-release's important documents.
+
 ## environment.py
 
 * removed all `adb connect <self.identifier>` calls.
