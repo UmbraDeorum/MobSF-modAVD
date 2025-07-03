@@ -66,7 +66,7 @@ docker cp <patchfile> <containter-id>:<destination>
 
 4. Commit locally for future use:
 ```bash
-docker commit -a umbradeorm <container_NAME> umbradeorum/mobile-security-framework-mobsf-modavd:latest
+docker commit -a umbradeorum <container_NAME> umbradeorum/mobile-security-framework-mobsf-modavd:latest
 ```
 
 5. From now on, you can run it via:
