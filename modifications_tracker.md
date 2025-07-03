@@ -5,6 +5,9 @@ Modifications tracker:
 * updated apt package lists
 * installed nano for editing
 
+- commited the modified version locally, and saved it in MobSF-modAVD-vX.X.tar format, to be `docker load`ed when in a rush.
+- `7z`ipped the MobSF-modAVD-vX.X.tar archive, for portability.
+
 ## environment.py
 
 * removed all `adb connect <self.identifier>` calls.
