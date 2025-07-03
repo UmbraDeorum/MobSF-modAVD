@@ -38,11 +38,15 @@ If you installed an application after completing the aforementioned steps (`adb 
 
 ---
 
+
+
+---
+
 ## Patchfile map
 
 | Patchfile | Destination |
 |:-:|:-:|
-| environment.py | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/environment.py |
-| frida_core.py | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/frida_core.py |
+| [environment.py](https://raw.githubusercontent.com/UmbraDeorum/MobSF-modAVD/refs/heads/main/mobsf-android-patchfiles/environment.py?token=GHSAT0AAAAAAC6L3ENC6S5FVUCXKCO52RMS2DF2DNQ) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/environment.py |
+| [frida_core.py](https://raw.githubusercontent.com/UmbraDeorum/MobSF-modAVD/refs/heads/main/mobsf-android-patchfiles/frida_core.py?token=GHSAT0AAAAAAC6L3ENC4AKIE5THG3FS4ZQO2DF2DZA) | /home/mobsf/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/views/android/frida_core.py |
 
 The patchfiles can be pushed in an original MobSF docker container: `docker cp <patchfile> <containter-id>:<destination>`.
