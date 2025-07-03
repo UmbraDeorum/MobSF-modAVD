@@ -75,7 +75,7 @@ docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZ
 
 ### Option 2: Load the ready Docker image archive
 
-1. From the **Releases** tab, download the latest `MobSF-modAVD-vX.X.tar.7z` file.
+1. From the **[Releases](https://github.com/UmbraDeorum/MobSF-modAVD/releases)** tab, download the latest `MobSF-modAVD-vX.X.tar.7z` file.
 
 2. Verify and extract to `.tar`:
 ```bash
