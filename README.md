@@ -107,7 +107,7 @@ docker run -it --rm --add-host=host.docker.internal:host-gateway -e MOBSF_ANALYZ
 
 ### DISCLAIMER
 
-Be your own you.<br/>
+Be your own you, but also be responsibe.<br/>
 This tool has been widely used to make the world a safer place.<br/>If you abuse it to illegal means, be ready to own up to it! <br/>
 This modification aims to make an Offensive Security Consultant's life a bit easier, and a student's entry point to learning a bit less thorny.<br/>
 That's all!
